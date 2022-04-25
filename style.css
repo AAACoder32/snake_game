@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #0F100F;
+}
+
+.snake-board {
+  display: grid;
+  width: 95vw;
+  height: 95vw;
+  border: 3px solid #1FB9E5;
+  background-color: #07080F;
+  margin: 0px 0px 12px 0px;
+  grid-template-rows: repeat(28, 1fr);
+  grid-template-columns: repeat(28, 1fr);
+}
+
+.keycontrol {
+  width: 95vw;
+  height: 30vh;
+  position: relative;
+}
+
+.btn {
+  position: absolute;
+  width: 29vw;
+  background-color: #0F100F;
+  color: #1FB9E5;
+  height: 10vh;
+  border: 2px solid #1FB9E5;
+  border-radius: 12px;
+  font-weight: 900;
+  font-size: 18px;
+}
+
+#UP {
+  top: 4vh;
+  left: 33vw;
+}
+
+#DOWN {
+  bottom: 4vh;
+  left: 33vw;
+}
+
+#RIGHT {
+  top: 10vh;
+  right: 2vw;
+}
+
+#LEFT {
+  top: 10vh;
+  left: 2vw;
+}
+
+.head {
+  background-color: #08E02A;
+}
+
+.snake{
+  background-color: #ACED60;
+  border: 1px solid #05E368;
+}
+
+.food {
+  background-color: #FF0A0A;
+}
